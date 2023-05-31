@@ -1,0 +1,6 @@
+From Figma to Code / Creating a resume page (https://www.youtube.com/watch?v=LkZPd0oRlMQ)
+
+https://github.com/kevin-powell/gary-resume-refactor
+https://github.com/Annie-Huang/gary-resume-refactor
+
+----------------------------------------------------------------

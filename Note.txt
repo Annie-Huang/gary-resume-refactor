@@ -6,3 +6,7 @@ https://github.com/Annie-Huang/gary-resume-refactor
 ----------------------------------------------------------------
 
 https://fonts.google.com/specimen/Outfit?query=Outfit
+https://fonts.coollabs.io/
+
+Countries like Germany have privacy issue with self-host google font because it need to contantly connect to google server.
+Replace the URL to 'api.fonts.coollabs.io' to resolve this problem

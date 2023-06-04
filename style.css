@@ -82,3 +82,9 @@ aside {
   display: grid;
   grid-auto-flow: column;
 }
+
+ul {
+  list-style: none; /* Need to set role='list' in the html for the accessibility tool to announce */
+  display: grid;
+  gap: 3rem;
+}

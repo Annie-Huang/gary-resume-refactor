@@ -68,9 +68,11 @@ body {
   align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
+  margin-left: 50px;
 }
 
 main {
+  padding-block: 2rem;
   grid-column: 2;
 }
 
@@ -107,6 +109,7 @@ aside {
   top: 0;
   left: 0;
   width: 0.5rem;
+  transform: translateX(-50%);
   aspect-ratio: 1;
   border-radius: 50%;
   background: var(--clr-neutral-100);

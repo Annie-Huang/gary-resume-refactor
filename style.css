@@ -88,10 +88,27 @@ aside {
 .icon-list {
   height: 100%;
   border-left: 1px solid orange;
+  padding: 0;
   margin: 0;
   margin-left: 10px;
   list-style: none; /* Need to set role='list' in the html for the accessibility tool to announce */
   display: grid;
   align-content: center;
   gap: 3rem;
+}
+
+.icon-list > li {
+  position: relative;
+  padding-left: 3rem;
+}
+.icon-list > li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--clr-neutral-100);
+  background: yellow;
 }

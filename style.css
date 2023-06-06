@@ -76,6 +76,7 @@ main {
 aside {
   grid-column: 1;
   /*grid-row: 1;*/
+  align-self: stretch;
 }
 
 .job-experience {
@@ -83,7 +84,10 @@ aside {
   grid-auto-flow: column;
 }
 
-ul {
+.icon-list {
+  height: 100%;
+  border-left: 1px solid orange;
+  margin-left: 10px;
   list-style: none; /* Need to set role='list' in the html for the accessibility tool to announce */
   display: grid;
   gap: 3rem;

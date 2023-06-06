@@ -42,6 +42,7 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: var(--clr-primary-800);
   color: var(--clr-neutral-100);
   font-family: var(--ff-base);
@@ -87,8 +88,10 @@ aside {
 .icon-list {
   height: 100%;
   border-left: 1px solid orange;
+  margin: 0;
   margin-left: 10px;
   list-style: none; /* Need to set role='list' in the html for the accessibility tool to announce */
   display: grid;
+  align-content: center;
   gap: 3rem;
 }

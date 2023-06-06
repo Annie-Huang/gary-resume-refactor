@@ -63,7 +63,8 @@ body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 15rem auto;
+  grid-template-columns: 15rem 1fr;
+  gap: clamp(3rem, 5vw, 6rem);
   grid-auto-flow: dense;
   align-items: center;
   min-height: 100vh;
@@ -91,7 +92,7 @@ aside {
   border-left: 1px solid var(--clr-primary-300);
   padding: 0;
   margin: 0;
-  margin-left: 4rem;
+  margin-left: clamp(3rem, 10vw, 10rem);
   list-style: none; /* Need to set role='list' in the html for the accessibility tool to announce */
   display: grid;
   align-content: center;

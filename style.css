@@ -120,6 +120,13 @@ aside {
   margin: 0;
 }
 
+.job-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* end and center does not look right */
+  margin-bottom: 1rem;
+}
+
 .icon-list {
   height: 100%;
   border-left: 1px solid var(--clr-primary-300);

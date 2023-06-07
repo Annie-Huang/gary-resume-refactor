@@ -72,8 +72,9 @@ body {
 }
 
 main {
-  padding-block: 2rem;
   grid-column: 2;
+  border: 2px solid orange;
+  width: calc(100vw - 20rem);
 }
 
 aside {
@@ -107,6 +108,7 @@ aside {
   display: grid;
   gap: 1rem;
   grid-auto-flow: column;
+  overflow-x: auto;
 }
 
 .job {

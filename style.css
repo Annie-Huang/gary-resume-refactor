@@ -105,7 +105,19 @@ aside {
 
 .job-experience {
   display: grid;
+  gap: 1rem;
   grid-auto-flow: column;
+}
+
+.job {
+  width: 28.5rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background: var(--clr-primary-800);
+}
+
+.job * {
+  margin: 0;
 }
 
 .icon-list {

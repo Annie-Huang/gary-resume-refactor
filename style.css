@@ -120,11 +120,30 @@ aside {
   margin: 0;
 }
 
+.year {
+  color: var(--clr-accent-400);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.2em;
+}
+
 .job-info {
   display: flex;
   justify-content: space-between;
   align-items: baseline; /* end and center does not look right */
   margin-bottom: 1rem;
+}
+
+.role {
+  font-size: var(--fs-600);
+  line-height: 1.2;
+}
+
+.company {
+  color: var(--clr-primary-200);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
 }
 
 .icon-list {

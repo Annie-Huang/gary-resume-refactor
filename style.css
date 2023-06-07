@@ -64,7 +64,7 @@ body {
 .main-grid {
   display: grid;
   grid-template-columns: 15rem 1fr;
-  gap: clamp(3rem, 5vw, 6rem);
+  gap: 5vw;
   grid-auto-flow: dense;
   align-items: center;
   min-height: 100vh;
@@ -74,7 +74,9 @@ body {
 main {
   grid-column: 2;
   /*border: 2px solid orange;*/
-  width: calc(100vw - 20rem);
+
+  /* 15rem is from the grid-template-columns. 5vw is from the .main-grid's gap */
+  width: calc(100vw - 15rem - 5vw);
 }
 
 aside {

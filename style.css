@@ -112,7 +112,8 @@ aside {
   gap: 1rem;
   grid-auto-flow: column;
   overflow-x: auto;
-  padding-bottom: 2rem;
+  position: relative;
+  padding-block: 2rem;
   /* scrollbar-color is use in firefox */
   scrollbar-color: var(--clr-accent-400) var(--clr-primary-800);
 }
@@ -138,6 +139,14 @@ aside {
 
 .job * {
   margin: 0;
+}
+
+.job:first-child::before {
+  content: 'Current role';
+  position: absolute;
+  color: var(--clr-accent-400);
+  top: 0;
+  left: 0;
 }
 
 .year {

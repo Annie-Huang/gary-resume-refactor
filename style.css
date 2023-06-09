@@ -149,6 +149,10 @@ aside {
   left: 0;
 }
 
+.job:last-child {
+  margin-right: 50px;
+}
+
 .year {
   color: var(--clr-accent-400);
   font-size: var(--fs-300);

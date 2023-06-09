@@ -108,10 +108,13 @@ aside {
 
 .job-experience {
   display: grid;
+  justify-content: start;
   gap: 1rem;
   grid-auto-flow: column;
   overflow-x: auto;
   padding-bottom: 2rem;
+  /* scrollbar-color is use in firefox */
+  scrollbar-color: var(--clr-accent-400) var(--clr-primary-800);
 }
 
 .job-experience::-webkit-scrollbar {

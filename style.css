@@ -63,7 +63,7 @@ body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 15rem 1fr;
+  grid-template-columns: clamp(10rem, 10vw, 15rem) 1fr;
   gap: 5vw;
   grid-auto-flow: dense;
   align-items: center;
@@ -72,6 +72,7 @@ body {
 }
 
 main {
+  padding-block: 2rem;
   grid-column: 2;
   /*border: 2px solid orange;*/
 
@@ -83,6 +84,10 @@ aside {
   grid-column: 1;
   /*grid-row: 1;*/
   align-self: stretch;
+
+  /* rather than setting a clamp for margin-left in .icon-list, this solution for different window size */
+  display: flex;
+  justify-content: end;
 }
 
 .eyebrow {
@@ -184,7 +189,7 @@ aside {
   border-left: 1px solid var(--clr-primary-300);
   padding: 0;
   margin: 0;
-  margin-left: clamp(3rem, 10vw, 10rem);
+  /*margin-left: clamp(3rem, 10vw, 10rem);*/
   list-style: none; /* Need to set role='list' in the html for the accessibility tool to announce */
   display: grid;
   align-content: center;
